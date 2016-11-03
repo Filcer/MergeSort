@@ -2,5 +2,5 @@
 class Archivo
 public:
     
-    vector<int> Leer();
+    array Leer();
     void Escribir();
