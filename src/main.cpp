@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
-#include "Archivos.h"
+#include "Archivo.h"
 
 int main()
 {
