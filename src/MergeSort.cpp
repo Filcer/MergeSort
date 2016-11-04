@@ -3,8 +3,6 @@
 
 using namespace std;
 
-void merge(int *,int, int , int );
-
 void MergeSort::mergesort(int *a, int low, int high){
 {
     int mid;
