@@ -1,6 +1,7 @@
 
 class Archivo
-public:
-    
+{
+    public:
     array Leer();
     void Escribir();
+};
