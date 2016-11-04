@@ -10,7 +10,6 @@
                 for(int i = 0; i < 29; i++)
                     cout << arr[i] << " ";
                 archivo.close();
-                return arr;
             } else
                 cout << "No se pudo abrir el archivo";
 }
