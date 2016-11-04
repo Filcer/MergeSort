@@ -2,6 +2,6 @@
 class Archivo
 {
     public:
-    array Leer();
-    void Escribir();
+    void Leer();
+    array Escribir();
 };
