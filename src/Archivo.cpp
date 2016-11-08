@@ -17,7 +17,7 @@ vector<int> Archivo::Leer()
 
 void Archivo::Escribir(vector<int> v)
 {
-    fstream archivo("test_merge_out.txt", ios::out);
+    fstream archivo("test_merge_out.txt", ios::out | ios::trunc);
     if (archivo.is_open()) {
         for (int i = 0; i < v.size(); i++) {
             archivo << v[i];

@@ -3,8 +3,8 @@
 
 int main()
 {
-	vector<int> v = Archivo::Leer();
+    vector<int> v = Archivo::Leer();
     MergeSort::mergesort(v, 0, v.size() - 1);
     Archivo::Escribir(v);
-    return 0;	
+    return 0;
 }
