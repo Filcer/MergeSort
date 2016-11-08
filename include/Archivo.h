@@ -1,7 +1,12 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
 
-class Archivo
+using namespace std;
+
+class Archivo 
 {
-    public:
-    void Leer();
-    array Escribir();
+public:
+    static vector<int> Leer();
+    static void Escribir(vector<int>);
 };

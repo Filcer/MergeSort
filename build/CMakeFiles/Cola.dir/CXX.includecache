@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Archivo.h
+iostream
+-
+fstream
+-
+vector
+-
+
+../include/MergeSort.h
+vector
+-
+
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/Archivo.cpp
+Archivo.h
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/Archivo.h
+
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/MergeSort.cpp
+MergeSort.h
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/MergeSort.h
+
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/main.cpp
+MergeSort.h
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/MergeSort.h
+Archivo.h
+/Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/Archivo.h
+

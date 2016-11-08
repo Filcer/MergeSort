@@ -1,30 +1,30 @@
-
 #include "Archivo.h"
-#include <vector>
 
- 
-   array Archivo::Leer(){
-   int arr[29];  
-   archivo.open("test_merge.txt", ios::out | ios::in);
-            if (archivo.is_open()) {
-                for(int i = 0; i < 29; i++)
-                    cout << arr[i] << " ";
-                archivo.close();
-            } else
-                cout << "No se pudo abrir el archivo";
+vector<int> Archivo::Leer()
+{
+    vector<int> v;
+    fstream archivo("test_merge.txt", ios::in);
+    if (archivo.is_open()) {
+        int aux;
+        while (!archivo.eof()) {
+            archivo >> aux;
+            v.push_back(aux);
+        }
+    } else
+        cout << "No se pudo abrir el archivo";
+    return v;
 }
 
-
-array Archivo::Escribir(){ //escribir el arreglo nuevo hecho en mergesort al archivo 
- 
-  archivo.open("test_merge.txt", ios::out | ios::in); 
-            if (archivo.is_open()) {
-                while (!archivo.eof()) {
-                 getline(archivo, linea)   
-                 arr[i++] << linea;
-                }
-                archivo.close();
-            } else
-                cout << "No se pudo abrir el archivo" << endl;
-    return arr; //¿?
+void Archivo::Escribir(vector<int> v)
+{
+    fstream archivo("test_merge_out.txt", ios::out);
+    if (archivo.is_open()) {
+        for (int i = 0; i < v.size(); i++) {
+            archivo << v[i];
+            archivo << " ";
+        }
+        archivo.close();
+    } else
+        cout << "No se pudo abrir el archivo" << endl;
+    return;
 }

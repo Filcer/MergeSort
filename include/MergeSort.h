@@ -1,8 +1,8 @@
+#include <vector>
 
-
-class MergeSort
+class MergeSort 
 {
-  public:
-    void merge(int *a,int low, int high, int mid);
-    void mergesort(int*a, int low, int high); 
+public:
+    static void merge(std::vector<int> a, int low, int high, int mid);
+    static void mergesort(std::vector<int> a, int low, int high);
 };

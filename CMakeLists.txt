@@ -5,4 +5,4 @@ include_directories(include)
 
 set(SOURCES src/Archivo.cpp src/main.cpp src/MergeSort.cpp)
 
-add_executable(Cola ${SOURCES})
+add_executable(MergeSort ${SOURCES})
