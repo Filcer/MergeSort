@@ -1,20 +1,20 @@
 #include "MergeSort.h"
 
-void MergeSort::mergesort(std::vector<int> a, int low, int high)
+std::vector<int> MergeSort::mergesort(std::vector<int> a, int low, int high)
 {
     {
         int mid;
         if (low < high) {
             mid = (low + high) / 2;
-            mergesort(a, low, mid);
-            mergesort(a, mid + 1, high);
-            merge(a, low, high, mid);
+            a = mergesort(a, low, mid);
+            a = mergesort(a, mid + 1, high);
+            a = merge(a, low, high, mid);
         }
-        return;
+        return a;
     }
 }
 
-void MergeSort::merge(std::vector<int> a, int low, int high, int mid)
+std::vector<int> MergeSort::merge(std::vector<int> a, int low, int high, int mid)
 {
     int i, j, k, c[50];
     i = low;
@@ -44,4 +44,5 @@ void MergeSort::merge(std::vector<int> a, int low, int high, int mid)
     for (i = low; i < k; i++) {
         a[i] = c[i];
     }
+    return a;
 }

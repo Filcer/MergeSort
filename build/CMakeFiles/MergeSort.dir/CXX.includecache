@@ -17,6 +17,8 @@ vector
 ../include/MergeSort.h
 vector
 -
+iostream
+-
 
 /Users/Dann/Documents/Algoritmos y Estructuras de Datos/MergeSort/src/Archivo.cpp
 Archivo.h
